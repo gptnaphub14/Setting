@@ -4387,7 +4387,7 @@ local function isLockInputActive()
     return isShootInputActive()
 end
 
-local AIM_PARTS = {"Head", "UpperTorso", "Torso", "HumanoidRootPart"} -- ล็อคหัวก่อน (ถ้าหัวถูกบัง/ไม่มี จะสำรองไปล็อคลำตัว) | อยากล็อคหัวล้วน ให้เหลือแค่ {"Head"}
+local AIM_PARTS = {"UpperTorso", "Torso", "HumanoidRootPart"} -- ล็อคเฉพาะลำตัว (ไม่ล็อคหัว)
 local sharedRayParams = RaycastParams.new()
 sharedRayParams.FilterType = Enum.RaycastFilterType.Exclude
 sharedRayParams.IgnoreWater = true
